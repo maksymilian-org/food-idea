@@ -20,7 +20,10 @@
       :title="state.recipe?.title"
       @close="closeRecipe"
     >
-      <RecipeContent :recipeId="state.recipe?.id" :apiKey="state.apiKey" />
+      <RecipeContent
+        :recipeId="String(state.recipe?.id)"
+        :apiKey="state.apiKey"
+      />
     </Modal>
   </div>
 </template>
