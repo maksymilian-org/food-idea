@@ -18,6 +18,11 @@
           >
             Preview
           </button>
+          <router-link
+            class="btn btn-link"
+            :to="{ name: 'recipe', params: { recipeId: recipe.id } }"
+            >Open</router-link
+          >
         </div>
       </div>
     </div>
